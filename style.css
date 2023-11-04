@@ -63,3 +63,11 @@ button[type="submit"]:hover {
   opacity: 0.5;
   font-size: smaller;
 }
+
+.red{
+  color:red;
+}
+
+.green{
+  color:green;
+}

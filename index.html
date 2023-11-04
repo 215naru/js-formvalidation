@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,30 +20,32 @@
           <!-- Name input -->
           <div class="form-outline">
             <label class="form-label" for="nombre">Nombre</label>
-            <input type="text" id="nombre" class="form-control" />
+            <input type="text" id="nombre" class="form-control" required/>
           </div>
           <div class="form-outline">
             <label class="form-label" for="apellido">Apellido</label>
-            <input type="text" id="apellido" class="form-control" />
+            <input type="text" id="apellido" class="form-control" required />
           </div>
 
           <!-- Email input -->
           <div class="form-outline">
             <label class="form-label" for="correo">Correo electrónico</label>
-            <input type="email" id="correo" class="form-control" />
+            <input type="email" id="correo" class="form-control" required />
           </div>
 
           <!-- Password input -->
           <div class="form-outline">
             <label class="form-label" for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena" class="form-control" />
+            <input type="password" id="contrasena" class="form-control" required/>
+            <p id="pw-msj" class="message"></p>
           </div>
 
           <div class="form-outline">
             <label class="form-label" for="confirmacion"
               >Confirma tu contraseña</label
             >
-            <input type="password" id="confirmacion" class="form-control" />
+            <input type="password" id="confirmacion" class="form-control" required />
+            <p id="pwc-msj" class="message"></p>
           </div>
 
           <!-- Checkbox -->
@@ -53,6 +55,7 @@
               class="form-control"
               type="checkbox"
               value=""
+              required
             />
             <label id="l-condicion" class="form-label" for="condicion">
               He leído y acepto los términos y condiciones
